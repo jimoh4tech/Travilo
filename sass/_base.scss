@@ -1,0 +1,48 @@
+:root {
+    --color-primary: #e4e4e4;
+    --color-primary-1: #e4e4e449;
+    --color-secondary:#3176b6ec;
+    --color-white: #fff;
+}
+
+$bp-large: 43.75em;    //800px
+$bp-medium: 37.5em;    //600px
+$bp-small: 28.74em;    //400px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 37.5%;
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3.3rem;
+    }
+}
